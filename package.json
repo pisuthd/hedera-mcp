@@ -1,0 +1,35 @@
+{
+  "name": "hedera-mcp",
+  "version": "0.1.0",
+  "description": "A wrapper interface for the Hedera Agent Kit that provides a MCP service for interacting with the Hedera blockchain",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pisuthd/hedera-mcp.git"
+  },
+  "keywords": [
+    "hedera",
+    "blockchain",
+    "ai-agent",
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "hedera-agent-kit",
+    "web3"
+  ],
+  "author": "Pisuth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pisuthd/hedera-mcp/issues"
+  },
+  "homepage": "https://github.com/pisuthd/hedera-mcp#readme",
+  "devDependencies": {
+    "@types/node": "^22.15.2",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
+  }
+}
