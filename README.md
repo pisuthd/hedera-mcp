@@ -71,4 +71,20 @@ The Hedera MCP server provides the following tools to Claude and other AI assist
 15. `hedera_transfer_native_hbar_token` - Transfers HBAR to another account
 16. `hedera_transfer_token` - Transfers tokens to another account
 
+## Troubleshooting
+If you encounter issues:
+
+- Verify your account ID and private key are correct
+- Check your account has sufficient HBAR balance
+- Ensure your network selection (testnet/mainnet) is correct
+- Restart Claude Desktop after changing MCP configurations
+- Check console output for detailed error messages
+
+## Deployment
+
+TBD
+
+## License
+This project is licensed under the MIT License.
+
 
