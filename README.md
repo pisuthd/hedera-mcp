@@ -5,13 +5,13 @@
 **Hedera MCP** is an MCP server implementation for the Hedera blockchain, built using the Hedera Agent Kit. It allows AI models that support the Model Context Protocol (MCP) to interact with the Hedera network and you can then perform a wide range of blockchain operations without needing to write code or understand technical details.
 
 ## Features
-- 15+ MCP tools covering account operations, token operations, and distribution, ported from Langchain's Hedera Agent Kit.
+- 15+ MCP tools covering account operations, token operations, and distribution.
 
-- Non-custodial setup with no private keys exposed on any server. All transaction signing occurs securely on the client side.
+- Non-custodial setup with no private keys exposed on any server. 
 
 - Supports MCP-compatible clients like Claude Desktop. Many more are being developed.
 
-- Together with other MCP tools like the `filesystem` `github`, this allows AI to access your directory and read before interacting with Web3
+- Will be more powerful with other MCP tools like the `filesystem`, `github`, this allows AI to access your directory and automate tasks both within and outside of Web3.
 
 ## Using with Claude Desktop
 
