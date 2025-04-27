@@ -1,15 +1,19 @@
 {
   "name": "hedera-mcp",
-  "version": "0.1.1",
-  "description": "A wrapper interface for the Hedera Agent Kit that provides a MCP service for interacting with the Hedera blockchain",
+  "version": "0.1.2",
+  "description": "MCP server implementaiton for the Hedera blockchain using the Hedera Agent Kit",
   "main": "dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "bin": {
+    "hedera-mcp": "dist/index.js"
+  },
   "files": [
     "dist"
   ],
   "scripts": {
     "build": "tsup",
+    "prepare": "npm run build",
     "test": "jest"
   },
   "repository": {
