@@ -232,7 +232,7 @@ cd claude-desktop-debian
     );
 }
 
-
+/* eslint-disable @typescript-eslint/no-explicit-any */
 function RequirementItem({ text }: any) {
     return (
         <li className="flex items-start gap-2">
@@ -242,6 +242,7 @@ function RequirementItem({ text }: any) {
     );
 }
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
 function ExampleConversation({ question, answer }: any) {
     return (
         <div className="bg-gray-50 rounded-lg overflow-hidden border border-gray-200">
