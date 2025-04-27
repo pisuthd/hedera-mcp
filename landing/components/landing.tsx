@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from 'react';
-import { ArrowRight, Check, MessageSquare, Shield, Zap, Code } from 'lucide-react';
+import {   Check } from 'lucide-react';
 
 const Landing = () => {
     const [copied, setCopied] = useState(false);
