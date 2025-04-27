@@ -25,8 +25,6 @@ function createMcpServer(
     server.tool(tool.name, tool.description, tool.schema, async (params: any): Promise<any> => {
       try {
 
-        console.log("params:", params)
-
         // Execute the handler with the params directly
         const result = await tool.handler(hederaAgentKit, params);
 

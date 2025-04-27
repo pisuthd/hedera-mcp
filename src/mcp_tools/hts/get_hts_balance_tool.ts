@@ -18,36 +18,28 @@ export const HederaGetHtsBalanceTool: McpTool = {
 
         const config = getHederaConfig();
 
-        try {
-            console.log('hedera_get_hts_balance tool has been called')
- 
-            if (!input.tokenId) {
-                throw new Error("tokenId is required");
-            }
+        console.error('hedera_get_hts_balance tool has been called')
 
-            const balance = await agent.getHtsBalance(
-                input.tokenId,
-                config.network as HederaNetworkType,
-                input?.accountId
-            )
+        if (!input.tokenId) {
+            throw new Error("tokenId is required");
+        }
 
-            const details = await agent.getHtsTokenDetails(
-                input?.tokenId,
-                config.network as HederaNetworkType,
-            )
+        const balance = await agent.getHtsBalance(
+            input.tokenId,
+            config.network as HederaNetworkType,
+            input?.accountId
+        )
 
-            return  {
-                status: "success",
-                balance: balance, // in base unit
-                unit: details.symbol,
-                decimals: details.decimals
-            }
-        } catch (error: any) {
-            return {
-                status: "error",
-                message: error.message,
-                code: error.code || "UNKNOWN_ERROR",
-            }
+        const details = await agent.getHtsTokenDetails(
+            input?.tokenId,
+            config.network as HederaNetworkType,
+        )
+
+        return {
+            status: "success",
+            balance: balance, // in base unit
+            unit: details.symbol,
+            decimals: details.decimals
         }
     },
 }
