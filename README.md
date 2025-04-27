@@ -71,6 +71,10 @@ The Hedera MCP server provides the following tools to Claude and other AI assist
 15. `hedera_transfer_native_hbar_token` - Transfers HBAR to another account
 16. `hedera_transfer_token` - Transfers tokens to another account
 
+## Screenshots
+
+![Screenshot from 2025-04-27 22-59-42](https://github.com/user-attachments/assets/440986ee-b0aa-460d-bd80-f7b7e38cd587)
+
 ## Troubleshooting
 If you encounter issues:
 
