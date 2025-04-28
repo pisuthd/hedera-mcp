@@ -4,6 +4,10 @@
 
 **Hedera MCP** is an MCP server implementation for the Hedera blockchain, built using the Hedera Agent Kit. It allows AI models that support the Model Context Protocol (MCP) to interact with the Hedera network and you can then perform a wide range of blockchain operations without needing to write code or understand technical details.
 
+- [Youtube Demo](https://www.youtube.com/watch?v=ghPehyoPRHA) 
+- [Landing Page](https://hedera-mcp.vercel.app/)
+- [NPM Registry](https://www.npmjs.com/package/hedera-mcp)
+
 ## Features
 - 15+ MCP tools covering account operations, token operations, and distribution.
 
@@ -86,7 +90,12 @@ If you encounter issues:
 
 ## Deployment
 
-TBD
+### Hedera Testnet
+
+Component Name | Link to Hashscan
+--- | ---
+Fungible Token Deployed By MCP |  [https://hashscan.io/testnet/token/0.0.5915836](https://hashscan.io/testnet/token/0.0.5915836)
+Transfer Tx by MCP | [https://hashscan.io/testnet/transaction/1745803371.170539683](https://hashscan.io/testnet/transaction/1745803371.170539683)
 
 ## License
 This project is licensed under the MIT License.
