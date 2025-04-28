@@ -192,18 +192,18 @@ cd claude-desktop-debian
 
                     <div className="space-y-10">
                         <ExampleConversation
-                            question="What's my current HBAR balance?"
-                            answer="I'll check your Hedera account balance. Your current balance is 250.75 HBAR."
+                            question="help send 0.5 HBAR to account 0.0.4299366?"
+                            answer="I'll help you send 0.5 HBAR to account 0.0.4299366. Let me execute that transaction for you."
                         />
 
                         <ExampleConversation
-                            question="I want to create a new token called 'MyToken' with the symbol 'MTK' and an initial supply of 1,000,000."
-                            answer="I'll help you create that token. Creating a fungible token with name 'MyToken', symbol 'MTK', and initial supply of 1,000,000... Your token has been created successfully! The token ID is 0.0.789012."
+                            question="suggest how we can Create fungible tokens on Hedera?"
+                            answer="I'd be happy to suggest how you can create fungible tokens on Hedera! Here's a step-by-step approach: 1. Choose a token name and symbol (e.g., MyToken and MTK) 2. Determine the number of decimal places (typically 2-18) 3. Decide on an initial supply"
                         />
 
                         <ExampleConversation
-                            question="Send 100 MTK tokens to account 0.0.123456"
-                            answer="I'll prepare that transaction for you. Transferring 100 MTK tokens to account 0.0.123456... The transfer was successful! Transaction ID: 0.0.456789@1684789123.456"
+                            question="help check my current HBAR balance ?"
+                            answer="I've checked your account, and your current HBAR balance is 95.99261739 HBAR. This reflects the 1 HBAR transfer you just made to account 0.0.4299366, plus the transaction fee that was deducted when processing the transfer."
                         />
                     </div>
 
@@ -249,7 +249,7 @@ function ExampleConversation({ question, answer }: any) {
             <div className="bg-gray-100 p-4 border-b border-gray-200">
                 <div className="flex items-start gap-3">
                     <div className="w-8 h-8 rounded-full bg-gray-300 flex-shrink-0 flex items-center justify-center text-gray-600 font-bold">
-                        U
+                        ME
                     </div>
                     <div className="pt-1">
                         <p className="text-gray-700">{question}</p>
@@ -259,10 +259,10 @@ function ExampleConversation({ question, answer }: any) {
             <div className="p-4">
                 <div className="flex items-start gap-3">
                     <div className="w-8 h-8 rounded-full bg-purple-100 flex-shrink-0 flex items-center justify-center text-purple-600 font-bold">
-                        C
+                        AI
                     </div>
                     <div className="pt-1">
-                        <p className="text-gray-700">{answer}</p>
+                        <p className="text-gray-700 line-clamp-2">{answer}</p>
                     </div>
                 </div>
             </div>
